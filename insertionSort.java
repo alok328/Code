@@ -7,6 +7,7 @@ class Ideone
 {
 	
 	public static void insertionSort(int[] a){
+		//increasing
 		for(int j=1; j<a.length; j++){
 			int cur = a[j];
 			int i = j-1;
@@ -16,6 +17,18 @@ class Ideone
 			}
 			a[i+1] = cur; 
 		}
+		// decreasing
+		/*
+		for(int j=a.length-2; j>=0; j--){
+			int cur = a[j];
+			int i = j+1;
+			while(i<a.length && a[i] > cur){
+				a[i-1] = a[i];
+				i+=1;
+			}
+			a[i-1] = cur; 
+		}
+		*/
 	}
 	
 	public static void main (String[] args) throws java.lang.Exception
